@@ -16,4 +16,19 @@ let employee = [
     [3, "ddkso"],
     [4, "good night"]
 ];
-console.log(id);
+//Union
+let pid;
+pid = 33;
+pid = "okk";
+//enum
+var direction;
+(function (direction) {
+    direction[direction["up"] = 0] = "up";
+    direction[direction["down"] = 1] = "down";
+    direction[direction["left"] = 2] = "left";
+    direction[direction["right"] = 3] = "right";
+})(direction || (direction = {}));
+console.log(direction.up);
+console.log(direction.down);
+console.log(direction.left);
+console.log(direction.right);
