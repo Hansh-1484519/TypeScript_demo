@@ -20,7 +20,7 @@ let employee = [
 let pid;
 pid = 33;
 pid = "okk";
-//enum
+//enum : defined set of named constants
 var direction;
 (function (direction) {
     direction[direction["up"] = 0] = "up";
@@ -28,7 +28,8 @@ var direction;
     direction[direction["left"] = 2] = "left";
     direction[direction["right"] = 3] = "right";
 })(direction || (direction = {}));
+const user = {
+    id: 1,
+    username: "mohan",
+};
 console.log(direction.up);
-console.log(direction.down);
-console.log(direction.left);
-console.log(direction.right);

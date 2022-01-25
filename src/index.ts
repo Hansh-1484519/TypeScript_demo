@@ -23,15 +23,21 @@ let pid: number | String;
 pid = 33;
 pid = "okk";
 
-//enum
+//enum : defined set of named constants
 enum direction {
     up,
     down,
     left,
     right
 }
+//Object
+type User = {
+    id : number,
+    username : string,
+}
+const user : User = {
+    id : 1,
+    username : "mohan",
+}
 
 console.log(direction.up);
-console.log(direction.down);
-console.log(direction.left);
-console.log(direction.right);
