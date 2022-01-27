@@ -40,4 +40,17 @@ const user : User = {
     username : "mohan",
 }
 
+//Type assertion
+let cid : any = 1
+let customerId = <number>cid
+
+//function
+function addNum ( x : number , y : number ) : number {
+    return x + y;
+}
+//void 
+function log ( message : string | number ) : void {
+    console.log( message );
+}
+
 console.log(direction.up);
