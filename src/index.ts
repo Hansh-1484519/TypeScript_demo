@@ -52,5 +52,13 @@ function addNum ( x : number , y : number ) : number {
 function log ( message : string | number ) : void {
     console.log( message );
 }
-
+// interface (custom type)
+interface UserInterface{
+    id : number,
+    name : string
+}
+const user1 : UserInterface = {
+    id : 2 ,
+    name : "radhamohan"
+}
 console.log(direction.up);
