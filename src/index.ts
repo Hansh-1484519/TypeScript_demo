@@ -54,11 +54,14 @@ function log ( message : string | number ) : void {
 }
 // interface (custom type)
 interface UserInterface{
-    id : number,
+   readonly id : number,
     name : string
+    age ?: number //its optional
 }
 const user1 : UserInterface = {
     id : 2 ,
     name : "radhamohan"
 }
+
+user1.id = 3;
 console.log(direction.up);
