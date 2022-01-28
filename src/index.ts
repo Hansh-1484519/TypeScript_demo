@@ -30,6 +30,7 @@ enum direction {
     left,
     right
 }
+console.log(direction.up);
 //Object
 type User = {
     id : number,
@@ -88,4 +89,9 @@ const hansh = new Person( 123 , "Hansh");
 const Raj = new Person( 234 , "Raj" ); 
 console.log(hansh.register());
 
-console.log(direction.up);
+//class interface
+interface personInterface{
+    pid1 : number
+    personName : string
+    registeration() : string
+}

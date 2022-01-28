@@ -28,6 +28,7 @@ var direction;
     direction[direction["left"] = 2] = "left";
     direction[direction["right"] = 3] = "right";
 })(direction || (direction = {}));
+console.log(direction.up);
 const user = {
     id: 1,
     username: "mohan",
@@ -62,4 +63,3 @@ class Person {
 const hansh = new Person(123, "Hansh");
 const Raj = new Person(234, "Raj");
 console.log(hansh.register());
-console.log(direction.up);
