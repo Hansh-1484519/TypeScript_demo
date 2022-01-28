@@ -65,11 +65,27 @@ const user1 : UserInterface = {
 // user1.id = 3; can't do this as it is only read only property
 
 //interface with function
-interface Mathfunc{
+interface Mathfunc {
     ( x : number , y : number) : number
 }
 
 const add : Mathfunc = (x : number , y : number) : number => x + y
+//classes
+class Person{
+   private id : number
+    name : String
+    constructor(id : number , name : String){
+        this.id = id
+        this.name = name
+        console.log(" Hello " + name );
+    }
 
+    register(){
+        return `${this.name} is now registered`;
+    }
+}
+const hansh = new Person( 123 , "Hansh");
+const Raj = new Person( 234 , "Raj" ); 
+console.log(hansh.register());
 
 console.log(direction.up);

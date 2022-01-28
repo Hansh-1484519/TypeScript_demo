@@ -53,9 +53,13 @@ class Person {
     constructor(id, name) {
         this.id = id;
         this.name = name;
-        console.log(" Hello Hansh ! ");
+        console.log(" Hello " + name);
+    }
+    register() {
+        return `${this.name} is now registered`;
     }
 }
 const hansh = new Person(123, "Hansh");
 const Raj = new Person(234, "Raj");
+console.log(hansh.register());
 console.log(direction.up);
