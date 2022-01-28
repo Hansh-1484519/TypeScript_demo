@@ -62,6 +62,14 @@ const user1 : UserInterface = {
     id : 2 ,
     name : "radhamohan"
 }
+// user1.id = 3; can't do this as it is only read only property
 
-user1.id = 3;
+//interface with function
+interface Mathfunc{
+    ( x : number , y : number) : number
+}
+
+const add : Mathfunc = (x : number , y : number) : number => x + y
+
+
 console.log(direction.up);
