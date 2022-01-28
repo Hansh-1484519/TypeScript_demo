@@ -32,4 +32,30 @@ const user = {
     id: 1,
     username: "mohan",
 };
+//Type assertion
+let cid = 1;
+let customerId = cid;
+//function
+function addNum(x, y) {
+    return x + y;
+}
+//void 
+function log(message) {
+    console.log(message);
+}
+const user1 = {
+    id: 2,
+    name: "radhamohan"
+};
+const add = (x, y) => x + y;
+//classes
+class Person {
+    constructor(id, name) {
+        this.id = id;
+        this.name = name;
+        console.log(" Hello Hansh ! ");
+    }
+}
+const hansh = new Person(123, "Hansh");
+const Raj = new Person(234, "Raj");
 console.log(direction.up);
